@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "DCS-VSE: Variable-Length Evolutionary Search for Compact Neural Models"
+type: software
+authors:
+  - family-names: Duankhan
+    given-names: Poomin
+    orcid: "https://orcid.org/0000-0003-1331-1046"
+    affiliation: "College of Computing, Khon Kaen University"
+  - family-names: Soomlek
+    given-names: Chitsutha
+    orcid: "https://orcid.org/0000-0002-9063-0705"
+    affiliation: "College of Computing, Khon Kaen University"
+  - family-names: Chiewchanwattana
+    given-names: Sirapat
+    orcid: "https://orcid.org/0000-0003-4473-2206"
+    affiliation: "College of Computing, Khon Kaen University"
+  - family-names: Sunat
+    given-names: Khamron
+    orcid: "https://orcid.org/0000-0002-2042-3284"
+    affiliation: "College of Computing, Khon Kaen University"
+license: MIT
+repository-code: "https://github.com/minikku/Variable-Length-Differentiated-Creative-Search"
+url: "https://github.com/minikku/Variable-Length-Differentiated-Creative-Search"
+preferred-citation:
+  type: article
+  title: "Enabling Variable-Length Evolutionary Search: Cross-Length Alignment, a Transformation Criterion, and Compact Neural Models for Biomedical Tabular Prediction"
+  authors:
+    - family-names: Duankhan
+      given-names: Poomin
+    - family-names: Soomlek
+      given-names: Chitsutha
+    - family-names: Chiewchanwattana
+      given-names: Sirapat
+    - family-names: Sunat
+      given-names: Khamron
+  journal: "Intelligent Systems with Applications"
+  year: 2026

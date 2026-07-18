@@ -1,0 +1,35 @@
+# ---------------------------------------------------------------------------
+# requirements.txt -- DCS-VSE healthcare benchmark suite
+# ---------------------------------------------------------------------------
+# Covers main.py and every standalone study (B1 .. B4 plus the combine /
+# compare scripts).  Install with:
+#     pip install -r requirements.txt
+# ---------------------------------------------------------------------------
+
+# Core scientific Python stack -- used by main.py, every algorithm in vse/,
+# every baseline, and every analysis / combine script.
+numpy>=1.23
+scipy>=1.9
+pandas>=1.5
+joblib>=1.2
+
+# Core ML library -- used by main.py (via vse/), B1 (LGBM/XGBoost/MLP), B4
+# (tuned MLP at H=1), and every analysis script.  StratifiedShuffleSplit,
+# StandardScaler, MLPClassifier, Pipeline, mutual_info_classif, SelectKBest,
+# compute_sample_weight, accuracy_score, f1_score, roc_auc_score all live here.
+scikit-learn>=1.1
+
+# Off-the-shelf gradient-boosted tree baselines used by B1.
+# LightGBM 3.3 introduced the `callbacks` parameter on fit() including
+# `lgb.early_stopping`, which B1 relies on.
+lightgbm>=3.3
+
+# XGBoost 1.6 introduced `early_stopping_rounds` as a constructor parameter
+# on XGBClassifier, which B1 relies on.
+xgboost>=1.6
+
+# Hyperparameter tuner used by B1 (LGBM, XGBoost) and B4 (tuned MLP).
+# Optuna 3.0 stabilised the TPESampler and MedianPruner APIs used here.
+# If Optuna is absent, B1 and B4 fall back to fixed default hyperparameters
+# rather than raising.
+optuna>=3.0
